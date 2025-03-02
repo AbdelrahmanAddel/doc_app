@@ -2,6 +2,7 @@ import 'package:doc_app/feature/splash/functions/delay_navigation_function.dart'
 import 'package:doc_app/feature/splash/view/widget/onboarding_background_image.dart';
 import 'package:doc_app/feature/splash/view/widget/onboarding_logo_and_text.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -14,8 +15,9 @@ class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
     super.initState();
-
-    delayNavigation(context: context);
+    SchedulerBinding.instance.addPostFrameCallback((_) {
+      delayNavigation(context);
+    });
   }
 
   @override
