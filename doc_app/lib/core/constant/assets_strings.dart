@@ -25,5 +25,9 @@ class Assets {
   /// Assets for svgRightSideDocLogo
   /// asset/svg/rightSideDocLogo.svg
   static const String svgRightSideDocLogo = "asset/svg/rightSideDocLogo.svg";
+
+  /// Assets for svgSplashLogo
+  /// asset/svg/splashLogo.svg
+  static const String svgSplashLogo = "asset/svg/splashLogo.svg";
 }
 
