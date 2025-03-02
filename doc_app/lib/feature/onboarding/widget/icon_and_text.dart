@@ -37,7 +37,7 @@ class IconAndText extends StatelessWidget {
               ),
             ),
             onPressed: () {
-              context.pushReplacementNamed(routeName: RouterStrings.signIn);
+              context.pushReplacementNamed(routeName: RouterStrings.login);
             },
             child: Text(
               AppStrings.getStarted,
