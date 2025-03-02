@@ -1,6 +1,6 @@
 import 'package:doc_app/core/router/router_strings.dart';
 import 'package:doc_app/feature/onboarding/screen/onboarding_screen.dart';
-import 'package:doc_app/feature/sign_in/screen/sign_in_screen.dart';
+import 'package:doc_app/feature/login/screen/login_screen.dart';
 import 'package:doc_app/feature/splash/view/splash_view.dart';
 import 'package:flutter/material.dart';
 
@@ -9,8 +9,8 @@ class AppRouter {
     switch (settings.name) {
       case RouterStrings.onBoarding:
         return MaterialPageRoute(builder: (_) => OnboardingScreen());
-      case RouterStrings.signIn:
-        return MaterialPageRoute(builder: (_) => SignInScreen());
+      case RouterStrings.login:
+        return MaterialPageRoute(builder: (_) => LoginScreen());
       case RouterStrings.splash:
         return MaterialPageRoute(builder: (_) => SplashView());
       default:
