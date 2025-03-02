@@ -19,7 +19,7 @@ class DocApp extends StatelessWidget {
           primaryColor: AppColors.primaryColor,
         ),
         debugShowCheckedModeBanner: false,
-        initialRoute: RouterStrings.signIn,
+        initialRoute: RouterStrings.splash,
         onGenerateRoute: AppRouter.generateRouter,
       ),
     );
