@@ -1,3 +1,4 @@
+import 'package:doc_app/core/common/widget/custom_text_span.dart';
 import 'package:doc_app/core/constant/app_strings.dart';
 import 'package:doc_app/core/helper/spaceing.dart';
 import 'package:doc_app/core/theme/app_text_style.dart';
@@ -27,6 +28,13 @@ class LoginViewBody extends StatelessWidget {
           ),
           verticalSpace(36),
           LoginViewTextFormFields(),
+          verticalSpace(26),
+          Center(
+            child: CustomTextFormFeild(
+              firstText: AppStrings.dontHave,
+              lastText: AppStrings.signUp,
+            ),
+          ),
         ],
       ),
     );

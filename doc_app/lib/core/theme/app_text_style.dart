@@ -9,6 +9,11 @@ class AppTextStyle {
     fontSize: 32.sp,
     color: AppColors.primaryColor,
   );
+  static final TextStyle interSemiBoldSize11PrimColor = TextStyle(
+    fontFamily: FontsStrings.semiBold,
+    fontSize: 11.sp,
+    color: AppColors.primaryColor,
+  );
   static final TextStyle interBoldSize24PrimColor = TextStyle(
     fontFamily: FontsStrings.interBold,
     fontSize: 24.sp,

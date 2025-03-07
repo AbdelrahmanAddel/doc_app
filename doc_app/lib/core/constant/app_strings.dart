@@ -2,6 +2,10 @@ class AppStrings {
   static const docDoc = 'Docdoc';
   static const password = 'Password';
   static const email = 'Email';
+  static const dontHave = 'don\'t have an account yet? ';
+  static const signUp = 'Sign Up';
+  static const signIn = 'Sign In';
+  static const alreadyHave = 'Already have an account? ';
   static const bylogging = 'By logging, you agree to our';
   static const login = 'Login';
   static const termAndCondition = ' Terms & Conditions';
