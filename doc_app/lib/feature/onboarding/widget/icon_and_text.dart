@@ -18,19 +18,15 @@ class IconAndText extends StatelessWidget {
           Text(
             textAlign: TextAlign.center,
             AppStrings.manageAndS,
-            style: AppTextStyle.interRegualar13W400,
+            style: AppTextStyle.interRegualarSize14Grey,
           ),
           SizedBox(height: 32.h),
           TextButton(
             style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(
-                AppColors.primaryColor,
-              ),
+              backgroundColor: WidgetStateProperty.all(AppColors.primaryColor),
               tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-              minimumSize: MaterialStateProperty.all(
-                Size(double.infinity, 52.h),
-              ),
-              shape: MaterialStateProperty.all(
+              minimumSize: WidgetStateProperty.all(Size(double.infinity, 52.h)),
+              shape: WidgetStateProperty.all(
                 RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16.0.r),
                 ),
@@ -41,7 +37,7 @@ class IconAndText extends StatelessWidget {
             },
             child: Text(
               AppStrings.getStarted,
-              style: AppTextStyle.interSemiBold18W600,
+              style: AppTextStyle.interSemiBoldSize18White,
             ),
           ),
         ],

@@ -30,7 +30,7 @@ class DoctorImageAndText extends StatelessWidget {
           bottom: 25.h,
           child: Text(
             AppStrings.bestDoctor,
-            style: AppTextStyle.interW700Size32.copyWith(height: 1.5),
+            style: AppTextStyle.interBoldSize32PrimColor.copyWith(height: 1.5),
           ),
         ),
       ],
