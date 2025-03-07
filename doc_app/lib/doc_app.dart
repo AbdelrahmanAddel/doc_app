@@ -1,4 +1,4 @@
-import 'package:doc_app/core/constant/app_colors.dart';
+import 'package:doc_app/core/theme/app_colors.dart';
 import 'package:doc_app/core/router/app_router.dart';
 import 'package:doc_app/core/router/router_strings.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +19,7 @@ class DocApp extends StatelessWidget {
           primaryColor: AppColors.primaryColor,
         ),
         debugShowCheckedModeBanner: false,
-        initialRoute: RouterStrings.onBoarding,
+        initialRoute: RouterStrings.login,
         onGenerateRoute: AppRouter.generateRouter,
       ),
     );

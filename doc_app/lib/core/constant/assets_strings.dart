@@ -2,8 +2,32 @@
 class Assets {
   Assets._();
   
-  /// Assets for assetsSvgDocLogo
+  /// Assets for imagesImage
+  /// asset/images/Image.png
+  static const String imagesImage = "asset/images/Image.png";
+
+  /// Assets for svgDocDocName
+  /// asset/svg/docDocName.svg
+  static const String svgDocDocName = "asset/svg/docDocName.svg";
+
+  /// Assets for svgDocLogo
   /// asset/svg/docLogo.svg
-  static const String assetsSvgDocLogo = "asset/svg/docLogo.svg";
+  static const String svgDocLogo = "asset/svg/docLogo.svg";
+
+  /// Assets for svgLeftSideDocLogo
+  /// asset/svg/leftSideDocLogo.svg
+  static const String svgLeftSideDocLogo = "asset/svg/leftSideDocLogo.svg";
+
+  /// Assets for svgOnboardingdocLogo
+  /// asset/svg/onboardingdocLogo.svg
+  static const String svgOnboardingdocLogo = "asset/svg/onboardingdocLogo.svg";
+
+  /// Assets for svgRightSideDocLogo
+  /// asset/svg/rightSideDocLogo.svg
+  static const String svgRightSideDocLogo = "asset/svg/rightSideDocLogo.svg";
+
+  /// Assets for svgSplashLogo
+  /// asset/svg/splashLogo.svg
+  static const String svgSplashLogo = "asset/svg/splashLogo.svg";
 }
 
