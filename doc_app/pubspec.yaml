@@ -72,6 +72,9 @@ flutter:
     - family: inter_regular
       fonts:
         - asset: asset/fonts/Inter_28pt-Regular.ttf
+    - family: inter_medium
+      fonts:
+        - asset: asset/fonts/Inter_28pt-Medium.ttf
     - family: semi_bold
       fonts:
         - asset: asset/fonts/Inter_28pt-SemiBold.ttf
