@@ -5,5 +5,5 @@ import 'package:flutter/material.dart';
 void delayNavigation(BuildContext context) async {
   await Future.delayed((Duration(seconds: 3)));
   if (!context.mounted) return;
-  context.pushReplacementNamed(routeName: RouterStrings.signIn);
+  context.pushReplacementNamed(routeName: RouterStrings.login);
 }
