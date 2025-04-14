@@ -35,6 +35,12 @@ class AppTextStyle {
     fontSize: 14.sp,
     color: AppColors.grey,
   );
+  static final TextStyle interRegualarSize13Black = TextStyle(
+    fontFamily: FontsStrings.interRegular,
+
+    fontSize: 13.sp,
+    color: Colors.black,
+  );
   static final TextStyle interRegualarSize11MeduimGrey = TextStyle(
     fontFamily: FontsStrings.interRegular,
 

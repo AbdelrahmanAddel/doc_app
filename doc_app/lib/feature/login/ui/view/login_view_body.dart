@@ -2,7 +2,8 @@ import 'package:doc_app/core/common/widget/custom_text_span.dart';
 import 'package:doc_app/core/constant/app_strings.dart';
 import 'package:doc_app/core/helper/spaceing.dart';
 import 'package:doc_app/core/theme/app_text_style.dart';
-import 'package:doc_app/feature/login/widget/login_view_text_form_fields.dart';
+import 'package:doc_app/feature/login/ui/widget/emai_and_password.dart';
+import 'package:doc_app/feature/login/ui/widget/login_view_button_and_text.dart';
 import 'package:flutter/material.dart';
 
 class LoginViewBody extends StatelessWidget {
@@ -12,7 +13,7 @@ class LoginViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
-      
+
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -27,7 +28,9 @@ class LoginViewBody extends StatelessWidget {
             style: AppTextStyle.interRegualarSize14Grey,
           ),
           verticalSpace(36),
-          LoginViewTextFormFields(),
+          EmailAndPassword(),
+          verticalSpace(10),
+          LoginViewButtonAndText(),
           verticalSpace(26),
           Center(
             child: CustomTextFormFeild(
