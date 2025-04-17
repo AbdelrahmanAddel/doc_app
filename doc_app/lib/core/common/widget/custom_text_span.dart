@@ -2,8 +2,8 @@ import 'package:doc_app/core/theme/app_colors.dart';
 import 'package:doc_app/core/theme/app_text_style.dart';
 import 'package:flutter/material.dart';
 
-class CustomTextFormFeild extends StatelessWidget {
-  const CustomTextFormFeild({
+class CustomTextSpan extends StatelessWidget {
+  const CustomTextSpan({
     super.key,
     required this.firstText,
     required this.lastText,

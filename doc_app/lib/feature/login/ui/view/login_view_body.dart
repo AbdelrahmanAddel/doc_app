@@ -33,7 +33,7 @@ class LoginViewBody extends StatelessWidget {
           LoginViewButtonAndText(),
           verticalSpace(26),
           Center(
-            child: CustomTextFormFeild(
+            child: CustomTextSpan(
               firstText: AppStrings.dontHave,
               lastText: AppStrings.signUp,
             ),
