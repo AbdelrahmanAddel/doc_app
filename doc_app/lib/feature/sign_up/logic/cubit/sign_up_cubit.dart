@@ -14,6 +14,14 @@ class SignUpCubit extends Cubit<SignUpState> {
   TextEditingController genderController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   TextEditingController confirmPasswordController = TextEditingController();
+  final formKey = GlobalKey<FormState>();
+  bool isObsecure = true;
+  bool isObsecureConfirmPassword = true;
+  bool hasLowerCase = false;
+  bool hasUpperCase = false;
+  bool hasNumber = false;
+  bool hasSpecialCharacters = false;
+  bool hasMinLength = false;
 
   SignUpCubit(this.signUpRepository) : super(SignUpState.initial());
   void emitSignUpState() async {
@@ -23,7 +31,6 @@ class SignUpCubit extends Cubit<SignUpState> {
         name: nameController.text,
         email: emailController.text,
         phone: phoneController.text,
-
         gender: '1',
         password: passwordController.text,
         confirmPassword: confirmPasswordController.text,
@@ -31,9 +38,9 @@ class SignUpCubit extends Cubit<SignUpState> {
     );
     responce.when(
       success: (success) => emit(SignUpState.success(success)),
-      failure:
-          (failure) =>
-              emit(SignUpState.error(failure.apiErrorModel.message ?? " ")),
+      failure: (failure) {
+        emit(SignUpState.error(failure.apiErrorModel.message ?? "Error"));
+      },
     );
   }
 }

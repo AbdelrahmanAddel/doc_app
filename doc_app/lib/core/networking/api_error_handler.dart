@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:doc_app/core/networking/model/api_error_model.dart';
+import 'package:doc_app/core/networking/error/api_error_handler.dart';
 
 import 'api_constants.dart';
 
@@ -181,7 +181,7 @@ ApiErrorModel _handleError(DioException error) {
     case DioExceptionType.badCertificate:
       return DataSource.DEFAULT.getFailure();
   }
-} 
+}
 
 class ApiInternalStatus {
   static const int SUCCESS = 0;

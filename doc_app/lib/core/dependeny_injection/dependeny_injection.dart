@@ -22,12 +22,12 @@ _signUp() {
   getIt.registerLazySingleton<SignUpRepository>(
     () => SignUpRepositoryImpl(getIt()),
   );
-  getIt.registerLazySingleton<SignUpCubit>(() => SignUpCubit(getIt()));
+  getIt.registerFactory<SignUpCubit>(() => SignUpCubit(getIt()));
 }
 
 _login() {
   getIt.registerLazySingleton<LoginRepository>(
     () => LoginRepositoryImpl(getIt()),
   );
-  getIt.registerLazySingleton<LoginCubit>(() => LoginCubit(getIt()));
+  getIt.registerFactory<LoginCubit>(() => LoginCubit(getIt()));
 }
