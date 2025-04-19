@@ -4,5 +4,6 @@
         "**/*.g.dart": true
     },
     "java.configuration.updateBuildConfiguration": "interactive",
-    "cmake.sourceDirectory": "/Users/abdelrahmanadelezeldean/Desktop/doc_app/doc_app/linux"
+    "cmake.sourceDirectory": "/Users/abdelrahmanadelezeldean/Desktop/doc_app/doc_app/linux",
+    "CodeGPT.apiKey": "OpenAI"
 }

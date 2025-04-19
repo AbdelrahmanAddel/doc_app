@@ -10,14 +10,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class LoginViewButtonAndText extends StatelessWidget {
-  LoginViewButtonAndText({super.key});
-
-  bool isObsecure = true;
+  const LoginViewButtonAndText({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final loginCubitConroller = context.read<LoginCubit>();
-
+    final LoginCubit loginCubitConroller = context.read<LoginCubit>();
     return Column(
       children: [
         verticalSpace(16),
