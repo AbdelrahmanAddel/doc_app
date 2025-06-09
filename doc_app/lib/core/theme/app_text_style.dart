@@ -84,3 +84,4 @@ class AppTextStyle {
     color: AppColors.darkBlue,
   );
 }
+
