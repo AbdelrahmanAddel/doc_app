@@ -5,6 +5,9 @@ class AppStrings {
   static const dontHave = 'don\'t have an account yet? ';
   static const signUp = 'Sign Up';
   static const signIn = 'Sign In';
+  static const seeAll = 'See All';
+  static const doctorSpeciality = 'Doctor Speciality';
+  static const recommendationDoctor = 'Recommendation Doctor';
   static const alreadyHave = 'Already have an account? ';
   static const bylogging = 'By logging, you agree to our';
   static const login = 'Login';

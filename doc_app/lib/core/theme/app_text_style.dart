@@ -49,7 +49,7 @@ class AppTextStyle {
   static final TextStyle interRegualarSize11MeduimGrey = TextStyle(
     fontFamily: FontsStrings.interRegular,
 
-    fontSize: 14.sp,
+    fontSize: 11.sp,
     color: AppColors.mediumGrey,
   );
   static final TextStyle interRegualarSize12PrimColor = TextStyle(

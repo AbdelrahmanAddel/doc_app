@@ -10,4 +10,7 @@ class AppColors {
   static const Color lighterGrey = Color(0xffEDEDED);
   static const Color lightestGrey = Color(0xffF5F5F5);
   static const Color offWhite = Color(0xffFDFDFF);
+  static const Color veryLightBlue = Color(0xffF4F8FF);
+
+
 }
