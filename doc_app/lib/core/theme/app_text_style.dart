@@ -19,6 +19,11 @@ class AppTextStyle {
     fontSize: 24.sp,
     color: AppColors.primaryColor,
   );
+  static final TextStyle interBoldSize18BDarkBlueColor = TextStyle(
+    fontFamily: FontsStrings.interBold,
+    fontSize: 18.sp,
+    color: AppColors.darkBlue,
+  );
   static final TextStyle font24W700Blac = TextStyle(
     fontWeight: FontWeight.w700,
     fontSize: 30.sp,
