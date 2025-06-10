@@ -82,6 +82,12 @@ class AppTextStyle {
     fontSize: 14.sp,
     color: AppColors.lightGrey,
   );
+  static final TextStyle interMeduinSize18White = TextStyle(
+    fontFamily: FontsStrings.interMeduim,
+
+    fontSize: 18.sp,
+    color: Colors.white,
+  );
   static final TextStyle interMeduinSize14DarkBlue = TextStyle(
     fontFamily: FontsStrings.interMeduim,
 

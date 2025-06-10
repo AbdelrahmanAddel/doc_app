@@ -8,12 +8,14 @@ class AppStrings {
   static const alreadyHave = 'Already have an account? ';
   static const bylogging = 'By logging, you agree to our';
   static const login = 'Login';
+  static const findNearBy = 'Find Nearby';
   static const continuee = 'Continue';
   static const signUpSuccess = 'Sign Up Success';
   static const congratulations =
       'Congratulations, you have signed up successfully!';
   static const termAndCondition = ' Terms & Conditions';
   static const and = ' and ';
+  static const bookAndSc = 'Book and\nschedule with\nnearest doctor';
   static const privacyPolicy = 'PrivacyPolicy.';
   static const rememberMe = 'Remember me';
   static const forgetPassword = 'Forgot Password?';

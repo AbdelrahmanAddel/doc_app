@@ -14,6 +14,22 @@ class Assets {
   /// asset/svg/docLogo.svg
   static const String svgDocLogo = "asset/svg/docLogo.svg";
 
+  /// Assets for svgDoctorBlueContainerBackgorundImage
+  /// asset/svg/DoctorBlueContainerBackgorundImage.svg
+  static const String svgDoctorBlueContainerBackgorundImage = "asset/svg/DoctorBlueContainerBackgorundImage.svg";
+
+  /// Assets for svgDoctorBlueContainerImage
+  /// asset/svg/DoctorBlueContainerImage.svg
+  static const String svgDoctorBlueContainerImage = "asset/svg/DoctorBlueContainerImage.svg";
+
+  /// Assets for svgDoctorContainerBackGroundImage
+  /// asset/svg/DoctorContainerBackGroundImage.png
+  static const String svgDoctorContainerBackGroundImage = "asset/svg/DoctorContainerBackGroundImage.png";
+
+  /// Assets for svgGirlImage
+  /// asset/svg/girl_image.png
+  static const String svgGirlImage = "asset/svg/girl_image.png";
+
   /// Assets for svgLeftSideDocLogo
   /// asset/svg/leftSideDocLogo.svg
   static const String svgLeftSideDocLogo = "asset/svg/leftSideDocLogo.svg";
