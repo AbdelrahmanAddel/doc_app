@@ -2,6 +2,10 @@
 class Assets {
   Assets._();
   
+  /// Assets for imagesDoctorImage
+  /// asset/images/doctor_image.png
+  static const String imagesDoctorImage = "asset/images/doctor_image.png";
+
   /// Assets for imagesImage
   /// asset/images/Image.png
   static const String imagesImage = "asset/images/Image.png";
@@ -14,9 +18,21 @@ class Assets {
   /// asset/svg/docLogo.svg
   static const String svgDocLogo = "asset/svg/docLogo.svg";
 
+  /// Assets for svgDoctorContainerBackGroundImage
+  /// asset/svg/DoctorContainerBackGroundImage.png
+  static const String svgDoctorContainerBackGroundImage = "asset/svg/DoctorContainerBackGroundImage.png";
+
+  /// Assets for svgGirlImage
+  /// asset/svg/girl_image.png
+  static const String svgGirlImage = "asset/svg/girl_image.png";
+
   /// Assets for svgLeftSideDocLogo
   /// asset/svg/leftSideDocLogo.svg
   static const String svgLeftSideDocLogo = "asset/svg/leftSideDocLogo.svg";
+
+  /// Assets for svgNotificationIcon
+  /// asset/svg/notification_icon.svg
+  static const String svgNotificationIcon = "asset/svg/notification_icon.svg";
 
   /// Assets for svgOnboardingdocLogo
   /// asset/svg/onboardingdocLogo.svg

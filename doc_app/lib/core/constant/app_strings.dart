@@ -5,15 +5,20 @@ class AppStrings {
   static const dontHave = 'don\'t have an account yet? ';
   static const signUp = 'Sign Up';
   static const signIn = 'Sign In';
+  static const seeAll = 'See All';
+  static const doctorSpeciality = 'Doctor Speciality';
+  static const recommendationDoctor = 'Recommendation Doctor';
   static const alreadyHave = 'Already have an account? ';
   static const bylogging = 'By logging, you agree to our';
   static const login = 'Login';
+  static const findNearBy = 'Find Nearby';
   static const continuee = 'Continue';
   static const signUpSuccess = 'Sign Up Success';
   static const congratulations =
       'Congratulations, you have signed up successfully!';
   static const termAndCondition = ' Terms & Conditions';
   static const and = ' and ';
+  static const bookAndSc = 'Book and\nschedule with\nnearest doctor';
   static const privacyPolicy = 'PrivacyPolicy.';
   static const rememberMe = 'Remember me';
   static const forgetPassword = 'Forgot Password?';
@@ -45,4 +50,5 @@ class AppStrings {
   static const manageAndS =
       'Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.';
   static const bestDoctor = '      Best Doctor\nAppointment App';
+  static const best2Doctor = '      Be   safsast Doctor\nAppoHellowsintment App';
 }

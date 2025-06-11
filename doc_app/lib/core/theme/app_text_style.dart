@@ -19,6 +19,11 @@ class AppTextStyle {
     fontSize: 24.sp,
     color: AppColors.primaryColor,
   );
+  static final TextStyle interBoldSize18BDarkBlueColor = TextStyle(
+    fontFamily: FontsStrings.interBold,
+    fontSize: 18.sp,
+    color: AppColors.darkBlue,
+  );
   static final TextStyle font24W700Blac = TextStyle(
     fontWeight: FontWeight.w700,
     fontSize: 30.sp,
@@ -44,7 +49,7 @@ class AppTextStyle {
   static final TextStyle interRegualarSize11MeduimGrey = TextStyle(
     fontFamily: FontsStrings.interRegular,
 
-    fontSize: 14.sp,
+    fontSize: 11.sp,
     color: AppColors.mediumGrey,
   );
   static final TextStyle interRegualarSize12PrimColor = TextStyle(
@@ -76,6 +81,12 @@ class AppTextStyle {
 
     fontSize: 14.sp,
     color: AppColors.lightGrey,
+  );
+  static final TextStyle interMeduinSize18White = TextStyle(
+    fontFamily: FontsStrings.interMeduim,
+
+    fontSize: 18.sp,
+    color: Colors.white,
   );
   static final TextStyle interMeduinSize14DarkBlue = TextStyle(
     fontFamily: FontsStrings.interMeduim,
