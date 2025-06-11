@@ -10,6 +10,7 @@ class DoctorBlueContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
+      width:double.infinity,
       height: 197.h,
       child: Stack(
         alignment: Alignment.bottomCenter,

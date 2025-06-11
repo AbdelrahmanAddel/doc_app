@@ -14,10 +14,11 @@ class DoctorContainerBackgoundAndText extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 18.w, vertical: 15.h),
 
       width: double.infinity,
-      height: 167.h,
+      height: 170.h,
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage(Assets.svgDoctorContainerBackGroundImage),
+          image: AssetImage(Assets.svgDoctorContainerBackGroundImage ,),
+          fit: BoxFit.cover,
         ),
         borderRadius: BorderRadius.circular(24.r),
       ),
