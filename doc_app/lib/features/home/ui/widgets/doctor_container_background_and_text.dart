@@ -17,7 +17,7 @@ class DoctorContainerBackgoundAndText extends StatelessWidget {
       height: 170.h,
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage(Assets.svgDoctorContainerBackGroundImage ,),
+          image: AssetImage(Assets.svgDoctorContainerBackGroundImage),
           fit: BoxFit.cover,
         ),
         borderRadius: BorderRadius.circular(24.r),

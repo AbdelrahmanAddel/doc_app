@@ -1,5 +1,6 @@
 import 'package:doc_app/core/dependeny_injection/dependeny_injection.dart';
 import 'package:doc_app/core/router/router_strings.dart';
+import 'package:doc_app/features/home/logic/cubit/home_cubit.dart';
 import 'package:doc_app/features/home/ui/home_view.dart';
 import 'package:doc_app/features/login/logic/cubit/login_cubit.dart';
 import 'package:doc_app/features/onboarding/screen/onboarding_screen.dart';
@@ -27,7 +28,13 @@ class AppRouter {
       case RouterStrings.splash:
         return MaterialPageRoute(builder: (_) => SplashView());
       case RouterStrings.home:
-        return MaterialPageRoute(builder: (_) => HomeView());
+        return MaterialPageRoute(
+          builder:
+              (_) => BlocProvider(
+                create: (context) => HomeCubit(getIt())..getDoctorsBySpecialization(),
+                child: HomeView(),
+              ),
+        );
       case RouterStrings.signUp:
         return MaterialPageRoute(
           builder:

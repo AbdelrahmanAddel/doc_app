@@ -2,6 +2,8 @@ class ApiConstants {
   static const apiBaseUrl = 'https://vcare.integration25.com/api/';
   static const login = 'auth/login';
   static const signUp = 'auth/register';
+  static const specializationDoctors = 'specialization/index';
+
 }
 
 class ApiErrors {
