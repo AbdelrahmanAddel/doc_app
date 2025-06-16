@@ -31,7 +31,7 @@ class AppRouter {
         return MaterialPageRoute(
           builder:
               (_) => BlocProvider(
-                create: (context) => HomeCubit(getIt())..getDoctorsBySpecialization(),
+                create: (context) => HomeCubit(getIt())..getAllSpecializationsDoctors(),
                 child: HomeView(),
               ),
         );
