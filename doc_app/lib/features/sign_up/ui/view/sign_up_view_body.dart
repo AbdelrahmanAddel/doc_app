@@ -1,6 +1,6 @@
 import 'package:doc_app/core/common/widget/custom_text_span.dart';
 import 'package:doc_app/core/constant/app_strings.dart';
-import 'package:doc_app/core/helper/naviagtor.dart';
+import 'package:doc_app/core/helper/extensions.dart';
 import 'package:doc_app/core/helper/spaceing.dart';
 import 'package:doc_app/core/router/router_strings.dart';
 import 'package:doc_app/core/theme/app_text_style.dart';

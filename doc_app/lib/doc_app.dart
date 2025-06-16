@@ -1,3 +1,4 @@
+import 'package:doc_app/core/constant/shared_pref_key.dart';
 import 'package:doc_app/core/theme/app_colors.dart';
 import 'package:doc_app/core/router/app_router.dart';
 import 'package:doc_app/core/router/router_strings.dart';
@@ -19,7 +20,7 @@ class DocApp extends StatelessWidget {
           primaryColor: AppColors.primaryColor,
         ),
         debugShowCheckedModeBanner: false,
-        initialRoute: RouterStrings.home,
+        initialRoute: isUserLoggedIn ? RouterStrings.home : RouterStrings.login,
         onGenerateRoute: AppRouter.generateRouter,
       ),
     );

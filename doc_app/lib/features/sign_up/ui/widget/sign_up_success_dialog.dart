@@ -1,5 +1,5 @@
 import 'package:doc_app/core/constant/app_strings.dart';
-import 'package:doc_app/core/helper/naviagtor.dart';
+import 'package:doc_app/core/helper/extensions.dart';
 import 'package:doc_app/core/router/router_strings.dart';
 import 'package:flutter/material.dart';
 

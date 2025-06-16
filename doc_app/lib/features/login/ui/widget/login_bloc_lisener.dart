@@ -1,5 +1,5 @@
 import 'package:doc_app/core/common/widget/custom_error_dialog.dart';
-import 'package:doc_app/core/helper/naviagtor.dart';
+import 'package:doc_app/core/helper/extensions.dart';
 import 'package:doc_app/core/router/router_strings.dart';
 import 'package:doc_app/core/theme/app_colors.dart';
 import 'package:doc_app/features/login/logic/cubit/login_cubit.dart';
