@@ -1,4 +1,7 @@
 import 'package:bloc/bloc.dart';
+import 'package:doc_app/core/constant/shared_pref_key.dart';
+import 'package:doc_app/core/constant/shared_prefrence.dart';
+import 'package:doc_app/core/networking/dio_factory.dart';
 import 'package:doc_app/features/login/data/model/login_request_body_model.dart';
 import 'package:doc_app/features/login/logic/cubit/login_state.dart';
 import 'package:doc_app/features/login/logic/repository/login_repository.dart';
@@ -22,12 +25,22 @@ class LoginCubit extends Cubit<LoginState> {
       ),
     );
     responce.when(
-      success: (loginResponce) {
+      success: (loginResponce) async {
+        await saveUserLogin(loginResponce.data?.token ?? '');
+        await setTokenAfterLoginIn(loginResponce.data?.token ?? '');
         emit(LoginState.success(loginResponce.message ?? "Login Succeess"));
       },
       failure: (error) {
         emit(LoginState.error(error.apiErrorModel.message ?? "Error "));
       },
     );
+  }
+
+  saveUserLogin(String token) async {
+    await SharedPrefHelper.setSecureString(SharedPrefKey.userToken, token);
+  }
+
+  setTokenAfterLoginIn(String token) {
+    DioFactory.setTokenAfterLoginIn(token);
   }
 }

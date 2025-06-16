@@ -1,5 +1,5 @@
 import 'package:doc_app/core/common/widget/custom_error_dialog.dart';
-import 'package:doc_app/core/helper/naviagtor.dart';
+import 'package:doc_app/core/helper/extensions.dart';
 import 'package:doc_app/core/theme/app_colors.dart';
 import 'package:doc_app/features/sign_up/logic/cubit/sign_up_cubit.dart';
 import 'package:doc_app/features/sign_up/logic/cubit/sign_up_state.dart';
