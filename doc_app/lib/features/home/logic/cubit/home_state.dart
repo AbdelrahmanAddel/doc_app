@@ -12,6 +12,7 @@ class HomeState with _$HomeState {
   const factory HomeState.doctorSpecializationError(ErrorHandler ? message) = DoctorSpecializationError;
 
 
+  const factory HomeState.filterDoctorsLoading() = FilterDoctorLoading;
   const factory HomeState.filterDoctorsLoaded(List<DoctorsModel>? doctors) = FilterDoctorsLoaded;
   const factory HomeState.filterDoctorsError(ErrorHandler? message) = FilterDoctorsError;
 

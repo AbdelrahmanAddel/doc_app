@@ -5,9 +5,8 @@ import 'package:doc_app/core/theme/app_text_style.dart';
 import 'package:doc_app/features/home/data/models/sub_models/doctor_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 class RecommendationDoctorListViewItem extends StatelessWidget {
-   RecommendationDoctorListViewItem({super.key, this.doctors ,required this.currentIndex});
+   const RecommendationDoctorListViewItem({super.key, this.doctors ,required this.currentIndex});
   final List<DoctorsModel> ?doctors;
  final  int currentIndex;
 
@@ -47,3 +46,5 @@ class RecommendationDoctorListViewItem extends StatelessWidget {
     );
   }
 }
+
+

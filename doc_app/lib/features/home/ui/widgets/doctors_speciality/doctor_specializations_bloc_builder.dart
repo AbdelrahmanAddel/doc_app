@@ -6,8 +6,9 @@ import 'package:doc_app/core/theme/app_text_style.dart';
 import 'package:doc_app/features/home/data/models/sub_models/specialization_doctor_model.dart';
 import 'package:doc_app/features/home/logic/cubit/home_cubit.dart';
 import 'package:doc_app/features/home/logic/cubit/home_state.dart';
-import 'package:doc_app/features/home/ui/widgets/doctor_speciality_list_view.dart';
-import 'package:doc_app/features/home/ui/widgets/recommendation_listview.dart';
+import 'package:doc_app/features/home/ui/widgets/doctors_speciality/doctor_shimmer_loading.dart';
+import 'package:doc_app/features/home/ui/widgets/doctors_speciality/doctor_speciality_list_view.dart';
+import 'package:doc_app/features/home/ui/widgets/recommendation_doctor_speciality/recommendation_doctor_shimmer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -20,6 +21,8 @@ class SpecializationsBlocBuilder extends StatelessWidget {
       buildWhen: (previous, current) {
         return current is DoctorSpecializationLoading ||
             current is DoctorSpecializationLoaded ||
+
+      
             current is DoctorSpecializationError;
       },
       builder: (context, state) {
@@ -27,6 +30,8 @@ class SpecializationsBlocBuilder extends StatelessWidget {
           doctorSpecializationLoaded: (doctors) {
             return doctorSpecialistLoaded(doctors: doctors);
           },
+   
+         
 
           doctorSpecializationLoading: () => doctorSpecialistLoading(),
           doctorSpecializationError: (message) => doctorSpecialistFailure(message: message),
@@ -42,7 +47,7 @@ class SpecializationsBlocBuilder extends StatelessWidget {
     return Expanded(
       child: Column(
         children: [
-          DoctorSpecialityListView(),
+          DoctorSpecialityListView(specializationDoctorsList:doctors ?? [] ,),
           verticalSpace(23),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -59,15 +64,39 @@ class SpecializationsBlocBuilder extends StatelessWidget {
               ),
             ],
           ),
-          verticalSpace(15),
-          RecommendationDoctorListView(doctors: doctors?[0].doctors ?? []),
+
         ],
       ),
     );
   }
 
   Widget doctorSpecialistLoading() {
-    return const Center(child: CircularProgressIndicator());
+    return Expanded(
+      child: Column(
+        children: [
+          SpecialityShimmerLoading(),
+              Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                AppStrings.recommendationDoctor,
+                style: AppTextStyle.interSemiBoldSize18White.copyWith(
+                  color: AppColors.darkBlue,
+                ),
+              ),
+              Text(
+                AppStrings.seeAll,
+                style: AppTextStyle.interRegualarSize12PrimColor,
+              ),
+            ],
+          ),
+          verticalSpace(10),
+      
+          DoctorsShimmerLoading()
+      
+        ],
+      ),
+    );
   }
 
   Widget doctorSpecialistFailure({ErrorHandler? message}) {

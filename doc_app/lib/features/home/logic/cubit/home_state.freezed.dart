@@ -23,6 +23,7 @@ mixin _$HomeState {
     required TResult Function(List<SpecializationDoctorsModel>? doctors)
         doctorSpecializationLoaded,
     required TResult Function(ErrorHandler? message) doctorSpecializationError,
+    required TResult Function() filterDoctorsLoading,
     required TResult Function(List<DoctorsModel>? doctors) filterDoctorsLoaded,
     required TResult Function(ErrorHandler? message) filterDoctorsError,
   }) =>
@@ -34,6 +35,7 @@ mixin _$HomeState {
     TResult? Function(List<SpecializationDoctorsModel>? doctors)?
         doctorSpecializationLoaded,
     TResult? Function(ErrorHandler? message)? doctorSpecializationError,
+    TResult? Function()? filterDoctorsLoading,
     TResult? Function(List<DoctorsModel>? doctors)? filterDoctorsLoaded,
     TResult? Function(ErrorHandler? message)? filterDoctorsError,
   }) =>
@@ -45,6 +47,7 @@ mixin _$HomeState {
     TResult Function(List<SpecializationDoctorsModel>? doctors)?
         doctorSpecializationLoaded,
     TResult Function(ErrorHandler? message)? doctorSpecializationError,
+    TResult Function()? filterDoctorsLoading,
     TResult Function(List<DoctorsModel>? doctors)? filterDoctorsLoaded,
     TResult Function(ErrorHandler? message)? filterDoctorsError,
     required TResult orElse(),
@@ -59,6 +62,7 @@ mixin _$HomeState {
         doctorSpecializationLoaded,
     required TResult Function(DoctorSpecializationError value)
         doctorSpecializationError,
+    required TResult Function(FilterDoctorLoading value) filterDoctorsLoading,
     required TResult Function(FilterDoctorsLoaded value) filterDoctorsLoaded,
     required TResult Function(FilterDoctorsError value) filterDoctorsError,
   }) =>
@@ -72,6 +76,7 @@ mixin _$HomeState {
         doctorSpecializationLoaded,
     TResult? Function(DoctorSpecializationError value)?
         doctorSpecializationError,
+    TResult? Function(FilterDoctorLoading value)? filterDoctorsLoading,
     TResult? Function(FilterDoctorsLoaded value)? filterDoctorsLoaded,
     TResult? Function(FilterDoctorsError value)? filterDoctorsError,
   }) =>
@@ -85,6 +90,7 @@ mixin _$HomeState {
         doctorSpecializationLoaded,
     TResult Function(DoctorSpecializationError value)?
         doctorSpecializationError,
+    TResult Function(FilterDoctorLoading value)? filterDoctorsLoading,
     TResult Function(FilterDoctorsLoaded value)? filterDoctorsLoaded,
     TResult Function(FilterDoctorsError value)? filterDoctorsError,
     required TResult orElse(),
@@ -158,6 +164,7 @@ class _$InitialImpl implements _Initial {
     required TResult Function(List<SpecializationDoctorsModel>? doctors)
         doctorSpecializationLoaded,
     required TResult Function(ErrorHandler? message) doctorSpecializationError,
+    required TResult Function() filterDoctorsLoading,
     required TResult Function(List<DoctorsModel>? doctors) filterDoctorsLoaded,
     required TResult Function(ErrorHandler? message) filterDoctorsError,
   }) {
@@ -172,6 +179,7 @@ class _$InitialImpl implements _Initial {
     TResult? Function(List<SpecializationDoctorsModel>? doctors)?
         doctorSpecializationLoaded,
     TResult? Function(ErrorHandler? message)? doctorSpecializationError,
+    TResult? Function()? filterDoctorsLoading,
     TResult? Function(List<DoctorsModel>? doctors)? filterDoctorsLoaded,
     TResult? Function(ErrorHandler? message)? filterDoctorsError,
   }) {
@@ -186,6 +194,7 @@ class _$InitialImpl implements _Initial {
     TResult Function(List<SpecializationDoctorsModel>? doctors)?
         doctorSpecializationLoaded,
     TResult Function(ErrorHandler? message)? doctorSpecializationError,
+    TResult Function()? filterDoctorsLoading,
     TResult Function(List<DoctorsModel>? doctors)? filterDoctorsLoaded,
     TResult Function(ErrorHandler? message)? filterDoctorsError,
     required TResult orElse(),
@@ -206,6 +215,7 @@ class _$InitialImpl implements _Initial {
         doctorSpecializationLoaded,
     required TResult Function(DoctorSpecializationError value)
         doctorSpecializationError,
+    required TResult Function(FilterDoctorLoading value) filterDoctorsLoading,
     required TResult Function(FilterDoctorsLoaded value) filterDoctorsLoaded,
     required TResult Function(FilterDoctorsError value) filterDoctorsError,
   }) {
@@ -222,6 +232,7 @@ class _$InitialImpl implements _Initial {
         doctorSpecializationLoaded,
     TResult? Function(DoctorSpecializationError value)?
         doctorSpecializationError,
+    TResult? Function(FilterDoctorLoading value)? filterDoctorsLoading,
     TResult? Function(FilterDoctorsLoaded value)? filterDoctorsLoaded,
     TResult? Function(FilterDoctorsError value)? filterDoctorsError,
   }) {
@@ -238,6 +249,7 @@ class _$InitialImpl implements _Initial {
         doctorSpecializationLoaded,
     TResult Function(DoctorSpecializationError value)?
         doctorSpecializationError,
+    TResult Function(FilterDoctorLoading value)? filterDoctorsLoading,
     TResult Function(FilterDoctorsLoaded value)? filterDoctorsLoaded,
     TResult Function(FilterDoctorsError value)? filterDoctorsError,
     required TResult orElse(),
@@ -302,6 +314,7 @@ class _$DoctorSpecializationLoadingImpl implements DoctorSpecializationLoading {
     required TResult Function(List<SpecializationDoctorsModel>? doctors)
         doctorSpecializationLoaded,
     required TResult Function(ErrorHandler? message) doctorSpecializationError,
+    required TResult Function() filterDoctorsLoading,
     required TResult Function(List<DoctorsModel>? doctors) filterDoctorsLoaded,
     required TResult Function(ErrorHandler? message) filterDoctorsError,
   }) {
@@ -316,6 +329,7 @@ class _$DoctorSpecializationLoadingImpl implements DoctorSpecializationLoading {
     TResult? Function(List<SpecializationDoctorsModel>? doctors)?
         doctorSpecializationLoaded,
     TResult? Function(ErrorHandler? message)? doctorSpecializationError,
+    TResult? Function()? filterDoctorsLoading,
     TResult? Function(List<DoctorsModel>? doctors)? filterDoctorsLoaded,
     TResult? Function(ErrorHandler? message)? filterDoctorsError,
   }) {
@@ -330,6 +344,7 @@ class _$DoctorSpecializationLoadingImpl implements DoctorSpecializationLoading {
     TResult Function(List<SpecializationDoctorsModel>? doctors)?
         doctorSpecializationLoaded,
     TResult Function(ErrorHandler? message)? doctorSpecializationError,
+    TResult Function()? filterDoctorsLoading,
     TResult Function(List<DoctorsModel>? doctors)? filterDoctorsLoaded,
     TResult Function(ErrorHandler? message)? filterDoctorsError,
     required TResult orElse(),
@@ -350,6 +365,7 @@ class _$DoctorSpecializationLoadingImpl implements DoctorSpecializationLoading {
         doctorSpecializationLoaded,
     required TResult Function(DoctorSpecializationError value)
         doctorSpecializationError,
+    required TResult Function(FilterDoctorLoading value) filterDoctorsLoading,
     required TResult Function(FilterDoctorsLoaded value) filterDoctorsLoaded,
     required TResult Function(FilterDoctorsError value) filterDoctorsError,
   }) {
@@ -366,6 +382,7 @@ class _$DoctorSpecializationLoadingImpl implements DoctorSpecializationLoading {
         doctorSpecializationLoaded,
     TResult? Function(DoctorSpecializationError value)?
         doctorSpecializationError,
+    TResult? Function(FilterDoctorLoading value)? filterDoctorsLoading,
     TResult? Function(FilterDoctorsLoaded value)? filterDoctorsLoaded,
     TResult? Function(FilterDoctorsError value)? filterDoctorsError,
   }) {
@@ -382,6 +399,7 @@ class _$DoctorSpecializationLoadingImpl implements DoctorSpecializationLoading {
         doctorSpecializationLoaded,
     TResult Function(DoctorSpecializationError value)?
         doctorSpecializationError,
+    TResult Function(FilterDoctorLoading value)? filterDoctorsLoading,
     TResult Function(FilterDoctorsLoaded value)? filterDoctorsLoaded,
     TResult Function(FilterDoctorsError value)? filterDoctorsError,
     required TResult orElse(),
@@ -484,6 +502,7 @@ class _$DoctorSpecializationLoadedImpl implements DoctorSpecializationLoaded {
     required TResult Function(List<SpecializationDoctorsModel>? doctors)
         doctorSpecializationLoaded,
     required TResult Function(ErrorHandler? message) doctorSpecializationError,
+    required TResult Function() filterDoctorsLoading,
     required TResult Function(List<DoctorsModel>? doctors) filterDoctorsLoaded,
     required TResult Function(ErrorHandler? message) filterDoctorsError,
   }) {
@@ -498,6 +517,7 @@ class _$DoctorSpecializationLoadedImpl implements DoctorSpecializationLoaded {
     TResult? Function(List<SpecializationDoctorsModel>? doctors)?
         doctorSpecializationLoaded,
     TResult? Function(ErrorHandler? message)? doctorSpecializationError,
+    TResult? Function()? filterDoctorsLoading,
     TResult? Function(List<DoctorsModel>? doctors)? filterDoctorsLoaded,
     TResult? Function(ErrorHandler? message)? filterDoctorsError,
   }) {
@@ -512,6 +532,7 @@ class _$DoctorSpecializationLoadedImpl implements DoctorSpecializationLoaded {
     TResult Function(List<SpecializationDoctorsModel>? doctors)?
         doctorSpecializationLoaded,
     TResult Function(ErrorHandler? message)? doctorSpecializationError,
+    TResult Function()? filterDoctorsLoading,
     TResult Function(List<DoctorsModel>? doctors)? filterDoctorsLoaded,
     TResult Function(ErrorHandler? message)? filterDoctorsError,
     required TResult orElse(),
@@ -532,6 +553,7 @@ class _$DoctorSpecializationLoadedImpl implements DoctorSpecializationLoaded {
         doctorSpecializationLoaded,
     required TResult Function(DoctorSpecializationError value)
         doctorSpecializationError,
+    required TResult Function(FilterDoctorLoading value) filterDoctorsLoading,
     required TResult Function(FilterDoctorsLoaded value) filterDoctorsLoaded,
     required TResult Function(FilterDoctorsError value) filterDoctorsError,
   }) {
@@ -548,6 +570,7 @@ class _$DoctorSpecializationLoadedImpl implements DoctorSpecializationLoaded {
         doctorSpecializationLoaded,
     TResult? Function(DoctorSpecializationError value)?
         doctorSpecializationError,
+    TResult? Function(FilterDoctorLoading value)? filterDoctorsLoading,
     TResult? Function(FilterDoctorsLoaded value)? filterDoctorsLoaded,
     TResult? Function(FilterDoctorsError value)? filterDoctorsError,
   }) {
@@ -564,6 +587,7 @@ class _$DoctorSpecializationLoadedImpl implements DoctorSpecializationLoaded {
         doctorSpecializationLoaded,
     TResult Function(DoctorSpecializationError value)?
         doctorSpecializationError,
+    TResult Function(FilterDoctorLoading value)? filterDoctorsLoading,
     TResult Function(FilterDoctorsLoaded value)? filterDoctorsLoaded,
     TResult Function(FilterDoctorsError value)? filterDoctorsError,
     required TResult orElse(),
@@ -665,6 +689,7 @@ class _$DoctorSpecializationErrorImpl implements DoctorSpecializationError {
     required TResult Function(List<SpecializationDoctorsModel>? doctors)
         doctorSpecializationLoaded,
     required TResult Function(ErrorHandler? message) doctorSpecializationError,
+    required TResult Function() filterDoctorsLoading,
     required TResult Function(List<DoctorsModel>? doctors) filterDoctorsLoaded,
     required TResult Function(ErrorHandler? message) filterDoctorsError,
   }) {
@@ -679,6 +704,7 @@ class _$DoctorSpecializationErrorImpl implements DoctorSpecializationError {
     TResult? Function(List<SpecializationDoctorsModel>? doctors)?
         doctorSpecializationLoaded,
     TResult? Function(ErrorHandler? message)? doctorSpecializationError,
+    TResult? Function()? filterDoctorsLoading,
     TResult? Function(List<DoctorsModel>? doctors)? filterDoctorsLoaded,
     TResult? Function(ErrorHandler? message)? filterDoctorsError,
   }) {
@@ -693,6 +719,7 @@ class _$DoctorSpecializationErrorImpl implements DoctorSpecializationError {
     TResult Function(List<SpecializationDoctorsModel>? doctors)?
         doctorSpecializationLoaded,
     TResult Function(ErrorHandler? message)? doctorSpecializationError,
+    TResult Function()? filterDoctorsLoading,
     TResult Function(List<DoctorsModel>? doctors)? filterDoctorsLoaded,
     TResult Function(ErrorHandler? message)? filterDoctorsError,
     required TResult orElse(),
@@ -713,6 +740,7 @@ class _$DoctorSpecializationErrorImpl implements DoctorSpecializationError {
         doctorSpecializationLoaded,
     required TResult Function(DoctorSpecializationError value)
         doctorSpecializationError,
+    required TResult Function(FilterDoctorLoading value) filterDoctorsLoading,
     required TResult Function(FilterDoctorsLoaded value) filterDoctorsLoaded,
     required TResult Function(FilterDoctorsError value) filterDoctorsError,
   }) {
@@ -729,6 +757,7 @@ class _$DoctorSpecializationErrorImpl implements DoctorSpecializationError {
         doctorSpecializationLoaded,
     TResult? Function(DoctorSpecializationError value)?
         doctorSpecializationError,
+    TResult? Function(FilterDoctorLoading value)? filterDoctorsLoading,
     TResult? Function(FilterDoctorsLoaded value)? filterDoctorsLoaded,
     TResult? Function(FilterDoctorsError value)? filterDoctorsError,
   }) {
@@ -745,6 +774,7 @@ class _$DoctorSpecializationErrorImpl implements DoctorSpecializationError {
         doctorSpecializationLoaded,
     TResult Function(DoctorSpecializationError value)?
         doctorSpecializationError,
+    TResult Function(FilterDoctorLoading value)? filterDoctorsLoading,
     TResult Function(FilterDoctorsLoaded value)? filterDoctorsLoaded,
     TResult Function(FilterDoctorsError value)? filterDoctorsError,
     required TResult orElse(),
@@ -767,6 +797,154 @@ abstract class DoctorSpecializationError implements HomeState {
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DoctorSpecializationErrorImplCopyWith<_$DoctorSpecializationErrorImpl>
       get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$FilterDoctorLoadingImplCopyWith<$Res> {
+  factory _$$FilterDoctorLoadingImplCopyWith(_$FilterDoctorLoadingImpl value,
+          $Res Function(_$FilterDoctorLoadingImpl) then) =
+      __$$FilterDoctorLoadingImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$FilterDoctorLoadingImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$FilterDoctorLoadingImpl>
+    implements _$$FilterDoctorLoadingImplCopyWith<$Res> {
+  __$$FilterDoctorLoadingImplCopyWithImpl(_$FilterDoctorLoadingImpl _value,
+      $Res Function(_$FilterDoctorLoadingImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$FilterDoctorLoadingImpl implements FilterDoctorLoading {
+  const _$FilterDoctorLoadingImpl();
+
+  @override
+  String toString() {
+    return 'HomeState.filterDoctorsLoading()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$FilterDoctorLoadingImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() doctorSpecializationLoading,
+    required TResult Function(List<SpecializationDoctorsModel>? doctors)
+        doctorSpecializationLoaded,
+    required TResult Function(ErrorHandler? message) doctorSpecializationError,
+    required TResult Function() filterDoctorsLoading,
+    required TResult Function(List<DoctorsModel>? doctors) filterDoctorsLoaded,
+    required TResult Function(ErrorHandler? message) filterDoctorsError,
+  }) {
+    return filterDoctorsLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? doctorSpecializationLoading,
+    TResult? Function(List<SpecializationDoctorsModel>? doctors)?
+        doctorSpecializationLoaded,
+    TResult? Function(ErrorHandler? message)? doctorSpecializationError,
+    TResult? Function()? filterDoctorsLoading,
+    TResult? Function(List<DoctorsModel>? doctors)? filterDoctorsLoaded,
+    TResult? Function(ErrorHandler? message)? filterDoctorsError,
+  }) {
+    return filterDoctorsLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? doctorSpecializationLoading,
+    TResult Function(List<SpecializationDoctorsModel>? doctors)?
+        doctorSpecializationLoaded,
+    TResult Function(ErrorHandler? message)? doctorSpecializationError,
+    TResult Function()? filterDoctorsLoading,
+    TResult Function(List<DoctorsModel>? doctors)? filterDoctorsLoaded,
+    TResult Function(ErrorHandler? message)? filterDoctorsError,
+    required TResult orElse(),
+  }) {
+    if (filterDoctorsLoading != null) {
+      return filterDoctorsLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(DoctorSpecializationLoading value)
+        doctorSpecializationLoading,
+    required TResult Function(DoctorSpecializationLoaded value)
+        doctorSpecializationLoaded,
+    required TResult Function(DoctorSpecializationError value)
+        doctorSpecializationError,
+    required TResult Function(FilterDoctorLoading value) filterDoctorsLoading,
+    required TResult Function(FilterDoctorsLoaded value) filterDoctorsLoaded,
+    required TResult Function(FilterDoctorsError value) filterDoctorsError,
+  }) {
+    return filterDoctorsLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(DoctorSpecializationLoading value)?
+        doctorSpecializationLoading,
+    TResult? Function(DoctorSpecializationLoaded value)?
+        doctorSpecializationLoaded,
+    TResult? Function(DoctorSpecializationError value)?
+        doctorSpecializationError,
+    TResult? Function(FilterDoctorLoading value)? filterDoctorsLoading,
+    TResult? Function(FilterDoctorsLoaded value)? filterDoctorsLoaded,
+    TResult? Function(FilterDoctorsError value)? filterDoctorsError,
+  }) {
+    return filterDoctorsLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(DoctorSpecializationLoading value)?
+        doctorSpecializationLoading,
+    TResult Function(DoctorSpecializationLoaded value)?
+        doctorSpecializationLoaded,
+    TResult Function(DoctorSpecializationError value)?
+        doctorSpecializationError,
+    TResult Function(FilterDoctorLoading value)? filterDoctorsLoading,
+    TResult Function(FilterDoctorsLoaded value)? filterDoctorsLoaded,
+    TResult Function(FilterDoctorsError value)? filterDoctorsError,
+    required TResult orElse(),
+  }) {
+    if (filterDoctorsLoading != null) {
+      return filterDoctorsLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class FilterDoctorLoading implements HomeState {
+  const factory FilterDoctorLoading() = _$FilterDoctorLoadingImpl;
 }
 
 /// @nodoc
@@ -852,6 +1030,7 @@ class _$FilterDoctorsLoadedImpl implements FilterDoctorsLoaded {
     required TResult Function(List<SpecializationDoctorsModel>? doctors)
         doctorSpecializationLoaded,
     required TResult Function(ErrorHandler? message) doctorSpecializationError,
+    required TResult Function() filterDoctorsLoading,
     required TResult Function(List<DoctorsModel>? doctors) filterDoctorsLoaded,
     required TResult Function(ErrorHandler? message) filterDoctorsError,
   }) {
@@ -866,6 +1045,7 @@ class _$FilterDoctorsLoadedImpl implements FilterDoctorsLoaded {
     TResult? Function(List<SpecializationDoctorsModel>? doctors)?
         doctorSpecializationLoaded,
     TResult? Function(ErrorHandler? message)? doctorSpecializationError,
+    TResult? Function()? filterDoctorsLoading,
     TResult? Function(List<DoctorsModel>? doctors)? filterDoctorsLoaded,
     TResult? Function(ErrorHandler? message)? filterDoctorsError,
   }) {
@@ -880,6 +1060,7 @@ class _$FilterDoctorsLoadedImpl implements FilterDoctorsLoaded {
     TResult Function(List<SpecializationDoctorsModel>? doctors)?
         doctorSpecializationLoaded,
     TResult Function(ErrorHandler? message)? doctorSpecializationError,
+    TResult Function()? filterDoctorsLoading,
     TResult Function(List<DoctorsModel>? doctors)? filterDoctorsLoaded,
     TResult Function(ErrorHandler? message)? filterDoctorsError,
     required TResult orElse(),
@@ -900,6 +1081,7 @@ class _$FilterDoctorsLoadedImpl implements FilterDoctorsLoaded {
         doctorSpecializationLoaded,
     required TResult Function(DoctorSpecializationError value)
         doctorSpecializationError,
+    required TResult Function(FilterDoctorLoading value) filterDoctorsLoading,
     required TResult Function(FilterDoctorsLoaded value) filterDoctorsLoaded,
     required TResult Function(FilterDoctorsError value) filterDoctorsError,
   }) {
@@ -916,6 +1098,7 @@ class _$FilterDoctorsLoadedImpl implements FilterDoctorsLoaded {
         doctorSpecializationLoaded,
     TResult? Function(DoctorSpecializationError value)?
         doctorSpecializationError,
+    TResult? Function(FilterDoctorLoading value)? filterDoctorsLoading,
     TResult? Function(FilterDoctorsLoaded value)? filterDoctorsLoaded,
     TResult? Function(FilterDoctorsError value)? filterDoctorsError,
   }) {
@@ -932,6 +1115,7 @@ class _$FilterDoctorsLoadedImpl implements FilterDoctorsLoaded {
         doctorSpecializationLoaded,
     TResult Function(DoctorSpecializationError value)?
         doctorSpecializationError,
+    TResult Function(FilterDoctorLoading value)? filterDoctorsLoading,
     TResult Function(FilterDoctorsLoaded value)? filterDoctorsLoaded,
     TResult Function(FilterDoctorsError value)? filterDoctorsError,
     required TResult orElse(),
@@ -1030,6 +1214,7 @@ class _$FilterDoctorsErrorImpl implements FilterDoctorsError {
     required TResult Function(List<SpecializationDoctorsModel>? doctors)
         doctorSpecializationLoaded,
     required TResult Function(ErrorHandler? message) doctorSpecializationError,
+    required TResult Function() filterDoctorsLoading,
     required TResult Function(List<DoctorsModel>? doctors) filterDoctorsLoaded,
     required TResult Function(ErrorHandler? message) filterDoctorsError,
   }) {
@@ -1044,6 +1229,7 @@ class _$FilterDoctorsErrorImpl implements FilterDoctorsError {
     TResult? Function(List<SpecializationDoctorsModel>? doctors)?
         doctorSpecializationLoaded,
     TResult? Function(ErrorHandler? message)? doctorSpecializationError,
+    TResult? Function()? filterDoctorsLoading,
     TResult? Function(List<DoctorsModel>? doctors)? filterDoctorsLoaded,
     TResult? Function(ErrorHandler? message)? filterDoctorsError,
   }) {
@@ -1058,6 +1244,7 @@ class _$FilterDoctorsErrorImpl implements FilterDoctorsError {
     TResult Function(List<SpecializationDoctorsModel>? doctors)?
         doctorSpecializationLoaded,
     TResult Function(ErrorHandler? message)? doctorSpecializationError,
+    TResult Function()? filterDoctorsLoading,
     TResult Function(List<DoctorsModel>? doctors)? filterDoctorsLoaded,
     TResult Function(ErrorHandler? message)? filterDoctorsError,
     required TResult orElse(),
@@ -1078,6 +1265,7 @@ class _$FilterDoctorsErrorImpl implements FilterDoctorsError {
         doctorSpecializationLoaded,
     required TResult Function(DoctorSpecializationError value)
         doctorSpecializationError,
+    required TResult Function(FilterDoctorLoading value) filterDoctorsLoading,
     required TResult Function(FilterDoctorsLoaded value) filterDoctorsLoaded,
     required TResult Function(FilterDoctorsError value) filterDoctorsError,
   }) {
@@ -1094,6 +1282,7 @@ class _$FilterDoctorsErrorImpl implements FilterDoctorsError {
         doctorSpecializationLoaded,
     TResult? Function(DoctorSpecializationError value)?
         doctorSpecializationError,
+    TResult? Function(FilterDoctorLoading value)? filterDoctorsLoading,
     TResult? Function(FilterDoctorsLoaded value)? filterDoctorsLoaded,
     TResult? Function(FilterDoctorsError value)? filterDoctorsError,
   }) {
@@ -1110,6 +1299,7 @@ class _$FilterDoctorsErrorImpl implements FilterDoctorsError {
         doctorSpecializationLoaded,
     TResult Function(DoctorSpecializationError value)?
         doctorSpecializationError,
+    TResult Function(FilterDoctorLoading value)? filterDoctorsLoading,
     TResult Function(FilterDoctorsLoaded value)? filterDoctorsLoaded,
     TResult Function(FilterDoctorsError value)? filterDoctorsError,
     required TResult orElse(),
