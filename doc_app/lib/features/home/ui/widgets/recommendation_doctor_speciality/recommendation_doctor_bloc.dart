@@ -13,8 +13,8 @@ class RecommendationDoctorBloc extends StatelessWidget {
     return BlocBuilder<HomeCubit, HomeState>(
       buildWhen: (previous, current) {
         return current is FilterDoctorsLoaded ||
-            current is FilterDoctorsError ||
-            current is FilterDoctorLoading;
+            current is FilterDoctorsError ;
+
       },
       builder: (context, state) {
         return state.maybeWhen(
@@ -24,9 +24,7 @@ class RecommendationDoctorBloc extends StatelessWidget {
           filterDoctorsError: (message) {
             return recommendationDoctorFailure();
           },
-          filterDoctorsLoading: () {
-            return const Center(child: CircularProgressIndicator());
-          },
+      
 
           orElse: () => SizedBox.shrink(),
         );

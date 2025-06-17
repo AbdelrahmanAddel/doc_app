@@ -74,6 +74,7 @@ class SpecializationsBlocBuilder extends StatelessWidget {
     return Expanded(
       child: Column(
         children: [
+          
           SpecialityShimmerLoading(),
               Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
