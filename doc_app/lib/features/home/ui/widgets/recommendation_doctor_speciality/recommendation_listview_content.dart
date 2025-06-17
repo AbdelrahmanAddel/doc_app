@@ -5,6 +5,7 @@ import 'package:doc_app/core/theme/app_text_style.dart';
 import 'package:doc_app/features/home/data/models/sub_models/doctor_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:shimmer/shimmer.dart';
 class RecommendationDoctorListViewItem extends StatelessWidget {
    const RecommendationDoctorListViewItem({super.key, this.doctors ,required this.currentIndex});
   final List<DoctorsModel> ?doctors;
@@ -15,13 +16,37 @@ class RecommendationDoctorListViewItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        CachedNetworkImage(
-          imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e2/Sadio_Man%C3%A9_-_Persepolis_F.C._v_Al_Nassr_FC%2C_19_September_2023.jpg",
-          progressIndicatorBuilder:
-              (context, url, downloadProgress) =>
-                  CircularProgressIndicator(value: downloadProgress.progress),
-          errorWidget: (context, url, error) => Icon(Icons.error),
-        ),
+          CachedNetworkImage(
+            imageUrl:
+                "https://static.wikia.nocookie.net/five-world-war/images/6/64/Hisoka.jpg/revision/latest?cb=20190313114050",
+            progressIndicatorBuilder: (context, url, downloadProgress) {
+              return Shimmer.fromColors(
+                baseColor: AppColors.lightGrey,
+                highlightColor: Colors.white,
+                child: Container(
+                  width: 110.w,
+                  height: 120.h,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.rectangle,
+                    borderRadius: BorderRadius.circular(12.0),
+                    color: Colors.white,
+                  ),
+                ),
+              );
+            },
+            imageBuilder: (context, imageProvider) => Container(
+              width: 110.w,
+              height: 120.h,
+              decoration: BoxDecoration(
+                shape: BoxShape.rectangle,
+                borderRadius: BorderRadius.circular(12.0),
+                image: DecorationImage(
+                  image: imageProvider,
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+          ),
         horizontalSpace(12),
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
