@@ -1,6 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
 
 part 'specialization_model.g.dart';
+
 @JsonSerializable()
 class Specialization {
   int? id;

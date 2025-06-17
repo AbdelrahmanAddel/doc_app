@@ -3,8 +3,9 @@ import 'package:doc_app/core/helper/spaceing.dart';
 import 'package:doc_app/core/theme/app_colors.dart';
 import 'package:doc_app/core/theme/app_text_style.dart';
 import 'package:doc_app/features/home/ui/widgets/doctor_blue_container.dart';
-import 'package:doc_app/features/home/ui/widgets/doctor_specializations_bloc_builder.dart';
+import 'package:doc_app/features/home/ui/widgets/doctors_speciality/doctor_specializations_bloc_builder.dart';
 import 'package:doc_app/features/home/ui/widgets/home_view_top_bar.dart';
+import 'package:doc_app/features/home/ui/widgets/recommendation_doctor_speciality/recommendation_doctor_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -42,6 +43,8 @@ class HomeView extends StatelessWidget {
               ),
               verticalSpace(16),
               SpecializationsBlocBuilder(),
+              verticalSpace(15),
+              RecommendationDoctorBloc(),
             ],
           ),
         ),

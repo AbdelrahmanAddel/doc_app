@@ -1,13 +1,14 @@
 import 'package:doc_app/core/helper/spaceing.dart';
 import 'package:doc_app/features/home/data/models/sub_models/doctor_model.dart';
-import 'package:doc_app/features/home/ui/widgets/recommendation_listview_content.dart';
+import 'package:doc_app/features/home/ui/widgets/recommendation_doctor_speciality/recommendation_listview_content.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+// ignore: must_be_immutable
 class RecommendationDoctorListView extends StatelessWidget {
-  const RecommendationDoctorListView({super.key, required this.doctors});
-  final List<DoctorsModel>? doctors;
-
+   RecommendationDoctorListView({super.key, required this.doctors});
+   List<DoctorsModel>? doctors;
+  
   @override
   Widget build(BuildContext context) {
     return Expanded(
